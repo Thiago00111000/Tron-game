@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+
+:root{
+    --verde: #6fff57;
+    --branco: #ffffff;
+    --preto: #000000;
+    --pretinho: #131313;
+    --pixel:  "Pixelify Sans", sans-serif;
+    --code: "Source Code Pro", monospace;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    overflow: hidden;
+    image-rendering: pixelated;
+    background-color: var(--pretinho);
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    color: var(--branco);
+    font-family: "Pixelify Sans", sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+    font-style: normal;
+    flex-direction: column;
+}
+
+canvas{
+    background-color: var(--preto);
+    /*width: 100%;*/
+}
+
+.score{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1rem;
+}
+
+.score--value{
+    font-weight: 700;
+    font-size: 2rem;
+    display: block;
+    margin-top: -10px;
+}
+
+.menu-screen{
+    position: absolute;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    color: var(--verde);
+    z-index: 1;
+}
+
+.game-over{
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 3rem;
+}
+
+.final-score{
+    font-weight: 500;
+    font-size: 1.5rem;
+}
+
+.button-play{
+    border: none;
+    border-radius:100px;
+    padding: 10px 15px 10px 12px;
+    font-family: var(--pixel);
+    font-size: 1rem;
+    font-weight: 600;
+    color: #333;
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
